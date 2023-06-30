@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Custom Apps
+    'accounts',
     'about',
     'settings',
     'footer',
@@ -51,6 +53,8 @@ INSTALLED_APPS = [
     'clients',
     'SEO',
     'inquiry',
+    'process',
+    'subscribers',
 ]
 
 MIDDLEWARE = [
@@ -83,6 +87,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'technology.wsgi.application'
 
+AUTH_USER_MODEL = 'accounts.Account'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases

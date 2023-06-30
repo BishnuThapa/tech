@@ -39,7 +39,7 @@ class Information(models.Model):
     mobile = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
     secondary_email = models.EmailField(max_length=255, null=True, blank=True)
-    opening_hours = models.TimeField()
+    opening_hours = models.CharField(max_length=255)
     address = models.TextField()
     latitude = models.CharField(max_length=255)
     longitude = models.CharField(max_length=255)
